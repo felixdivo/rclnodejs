@@ -407,12 +407,6 @@ let rcl = {
   },
 };
 
-process.on('SIGINT', () => {
-  debug('Catch ctrl+c event and will cleanup and terminate.');
-  rcl.shutdown();
-  process.exit(0);
-});
-
 module.exports = rcl;
 
 // The following statements are located here to work around a
